@@ -18,7 +18,7 @@ async def main():
     # Если не указать storage, то по умолчанию всё равно будет MemoryStorage
     # Но явное лучше неявного =]
     dp = Dispatcher(storage=MemoryStorage())
-    bot = Bot(token="6692392922:AAETK8Zp5xafcOkRsFxGzM7NDkF2TetPfpo")
+    bot = Bot(token="ввести свой токен")
 
     dp.include_router(common.router)
     dp.include_router(ordering_food.router)
