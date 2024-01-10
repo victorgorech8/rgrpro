@@ -13,7 +13,7 @@ def send_telegram(text: str):
             )
     connection.autocommit = True
     
-    select_users = "SELECT idtelegram from users"
+    select_users = "SELECT idtelegram from users WHERE рассылка=1"
     users = execute_read_query(connection, select_users)
 
     for user in users:
